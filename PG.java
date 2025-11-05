@@ -11,10 +11,44 @@ public class PG{
 
 
     public static void eo(int maxE){
+        String letters = "";
+        int total = maxE * 2;
         if (maxE % 2 == 0){
-            
+            for (int i = 1; i <= maxE; i++){
+                if (i % 2 != 0){
+                    for (int j = 0; j < i; j++){
+                        letters += "O";
+                    }
+                    System.out.println(letters);
+                    letters = "";
+                }
+                else if (i % 2 == 0){
+                    for (int k = 0; k < i; k++){
+                        letters += "E";
+                    }
+                    System.out.println(letters);
+                    letters = "";
+                }
+            }
 
+            for (int l = maxE; l >= maxE; l--){
+                if (l % 2 != 0){
+                    for (int m = 0; m < l; m++){
+                        letters += "O";
+                    }
+                    System.out.println(letters);
+                    letters = "";
+                }
+                else if (l % 2 == 0){
+                    for (int n = 0; n < l; n++){
+                        letters += "E";
+                    }
+                    System.out.println(letters);
+                    letters = "";
+                }
+            }
         }
+
     }
 
 
