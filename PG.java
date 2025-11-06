@@ -128,7 +128,7 @@ public class PG{
     }
 
 //
-//  Pre-condition: You must input an odd integer and have it be less than 11.
+//  Pre-condition: You must input an odd integer and have it be less than 11 and greater than 0.
 //  Post-condition: This will give you a pattern where the first row starts with the given odd number, and each following row decreases the number value by 2. The amount of digits also decrease by two until it reach 1.
 //
     public static void odds(int start){
@@ -144,7 +144,7 @@ public class PG{
     }
 
 //
-//  Pre-condition: This need to have an integer as an input that is less than 10.
+//  Pre-condition: This need to have an integer as an input that is less than 10 and greated than 0.
 //  Post-condition: This pattern starts at 1 with 1 digit in the row, and each following row increases the number value by 1 and the amount of digits by 1 and stops when it has printed the last row (the int you gave it).
 //
     public static void triangle(int rows){
@@ -166,7 +166,11 @@ public class PG{
             
         }
     }
-
+    
+//
+//  Pre-condition: You need to input an int from 1 to infinity.
+//  Post-condition: It will give you a pattern where it stats with 1 star, and each following row has two more stars. This goes until it has printed a rows(the input) number of rows.
+//
     public static void stars(int rows){
             String stars = "*";
             System.out.println("*");
