@@ -26,7 +26,6 @@ public class PG{
 //  Pre-condition: There must be an input of a random integer ranging from 1-9. Any input above that with give a weird patter due to double digits.
 //  Post-condition: The result of this is a patter where each line in the console increases the number in the patter by 1. In each rows, there will be one less than twice as much of the max rows. The amount of digits in each row decreases by 2. There will also be an increasing amount of spaces added to the front of each row, starting with 0.
 //
-
     public static void pyramid(int rows){
         String nums = "";
         int rep = rows;
