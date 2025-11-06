@@ -4,7 +4,7 @@ public class PG{
         //stars(7);
         //triangle(9);
         //odds(9);
-        eo(6);
+        eo(5);
 
     }
 
@@ -31,7 +31,7 @@ public class PG{
                 }
             }
 
-            for (int l = maxE; l >= maxE; l--){
+            for (int l = maxE - 1; l > 0; l--){
                 if (l % 2 != 0){
                     for (int m = 0; m < l; m++){
                         letters += "O";
@@ -39,9 +39,44 @@ public class PG{
                     System.out.println(letters);
                     letters = "";
                 }
-                else if (l % 2 == 0){
+                else{
                     for (int n = 0; n < l; n++){
                         letters += "E";
+                    }
+                    System.out.println(letters);
+                    letters = "";
+                }
+            }
+        }
+        else{
+            for (int i = 1; i <= maxE; i++){
+                if (i % 2 != 0){
+                    for (int j = 0; j < i; j++){
+                        letters += "E";
+                    }
+                    System.out.println(letters);
+                    letters = "";
+                }
+                else if (i % 2 == 0){
+                    for (int k = 0; k < i; k++){
+                        letters += "O";
+                    }
+                    System.out.println(letters);
+                    letters = "";
+                }
+            }
+
+            for (int l = maxE - 1; l > 0; l--){
+                if (l % 2 != 0){
+                    for (int m = 0; m < l; m++){
+                        letters += "E";
+                    }
+                    System.out.println(letters);
+                    letters = "";
+                }
+                else{
+                    for (int n = 0; n < l; n++){
+                        letters += "O";
                     }
                     System.out.println(letters);
                     letters = "";
