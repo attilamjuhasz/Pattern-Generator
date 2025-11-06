@@ -13,10 +13,18 @@ public class PG{
     public static void pyramid(int rows){
         String nums = "";
         int rep = rows;
+        int spaces = 0;
+        int end = 0;
         for (int i = 1; i <= rows; i++){
             for (int j = (2 * rep)-1; j > 0; j--){
+                for (int k = spaces; k > end; k--){
+                    nums += " ";
+                }
+                end = spaces;
                 nums = nums + i;
             }
+            end = 0;
+            spaces++;
             rep--;
             System.out.println(nums);
             nums = "";
