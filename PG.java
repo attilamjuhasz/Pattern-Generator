@@ -4,9 +4,43 @@ public class PG{
         //stars(7);
         //triangle(9);
         //odds(9);
-        eo(5);
+        //eo(5);
+        pyramid(5);
 
     }
+
+
+    public static void pyramid(int rows){
+        String nums = "";
+        int rep = rows;
+        for (int i = 1; i <= rows; i++){
+            for (int j = (2 * rep)-1; j > 0; j--){
+                nums = nums + i;
+            }
+            rep--;
+            System.out.println(nums);
+            nums = "";
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -85,33 +119,6 @@ public class PG{
         }
 
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     public static void odds(int start){
         String sOdd = "";
