@@ -1,3 +1,12 @@
+//
+//  Class author:  Attila Juhasz
+//  Date created:  11/4/25
+//  General description: This class creates different types of patterns based on inputs. Each method creates a different type of pattern based on the input you give it.
+//
+
+
+
+
 public class PG{
     public static void main(String[] args){
 
@@ -13,6 +22,10 @@ public class PG{
 
     }
 
+//
+//  Pre-condition: There must be an input of a random integer ranging from 1-9. Any input above that with give a weird patter due to double digits.
+//  Post-condition: The result of this is a patter where each line in the console increases the number in the patter by 1. In each rows, there will be one less than twice as much of the max rows. The amount of digits in each row decreases by 2. There will also be an increasing amount of spaces added to the front of each row, starting with 0.
+//
 
     public static void pyramid(int rows){
         String nums = "";
@@ -35,6 +48,10 @@ public class PG{
         }
     }
 
+//
+//  Pre-condition: You must give any interger ranging from 1 to infinity.
+//  Post-condition: You will get a pattern where you starts with either E or O in the first line, depending on whether the integer is odd or even. Then, each row alternates between O and E, increasing the amount of E/O by two until it reaches then inputted int. Then, it decreases by twos, alternating between E/O until it reaches 1.
+//
     public static void eo(int maxE){
         String letters = "";
         if (maxE % 2 == 0){
