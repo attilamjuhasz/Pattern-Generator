@@ -1,10 +1,14 @@
 public class PG{
     public static void main(String[] args){
 
-        //stars(7);
-        //triangle(9);
-        //odds(9);
-        //eo(5);
+        stars(7);
+
+        triangle(9);
+        
+        odds(9);
+        
+        eo(5);
+        
         pyramid(5);
 
     }
@@ -31,30 +35,8 @@ public class PG{
         }
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     public static void eo(int maxE){
         String letters = "";
-        int total = maxE * 2;
         if (maxE % 2 == 0){
             for (int i = 1; i <= maxE; i++){
                 if (i % 2 != 0){
