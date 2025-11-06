@@ -143,6 +143,10 @@ public class PG{
 
     }
 
+//
+//  Pre-condition: This need to have an integer as an input that is less than 10.
+//  Post-condition: This pattern starts at 1 with 1 digit in the row, and each following row increases the number value by 1 and the amount of digits by 1 and stops when it has printed the last row (the int you gave it).
+//
     public static void triangle(int rows){
         int num = 1;
         System.out.println(num);
