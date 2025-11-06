@@ -127,6 +127,10 @@ public class PG{
 
     }
 
+//
+//  Pre-condition: You must input an odd integer and have it be less than 11.
+//  Post-condition: This will give you a pattern where the first row starts with the given odd number, and each following row decreases the number value by 2. The amount of digits also decrease by two until it reach 1.
+//
     public static void odds(int start){
         String sOdd = "";
         for (int i = start; i > 0; i-=2){
